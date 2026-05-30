@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Park Dental Center | Premium Dental Care Dubai</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: '#0B2341',
+        teal: '#00A99D',
+        lightbg: '#F7FAFC'
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+body{
+font-family: 'Segoe UI', sans-serif;
+}
+.hero-bg{
+background: linear-gradient(135deg,#0B2341 0%,#123A63 50%,#00A99D 100%);
+}
+.glass{
+backdrop-filter: blur(12px);
+background: rgba(255,255,255,0.08);
+}
+</style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-lg shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg" alt="Park Dental Center Logo" class="h-14 w-auto">
+      <div>
+        <h1 class="font-bold text-navy text-lg md:text-xl">
+          Park Dental Center
+        </h1>
+        <p class="text-xs text-gray-600">
+          مركز بارك لطب وجراحة الأسنان
+        </p>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex gap-8 font-medium text-gray-700">
+      <a href="#about" class="hover:text-teal transition">About</a>
+      <a href="#services" class="hover:text-teal transition">Services</a>
+      <a href="#team" class="hover:text-teal transition">Doctors</a>
+      <a href="#reviews" class="hover:text-teal transition">Reviews</a>
+      <a href="#contact" class="hover:text-teal transition">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden text-navy">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+  </div>
+
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+    <div class="flex flex-col p-4 gap-4">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Doctors</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center pt-28">
+  <div class="max-w-7xl mx-auto px-6 w-full">
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <div class="text-white">
+        <span class="bg-white/20 px-4 py-2 rounded-full text-sm font-medium">
+          Premium Dental Care • Dubai
+        </span>
+
+        <h2 class="text-5xl md:text-6xl font-bold mt-6 leading-tight">
+          World-Class Dental Care in the Heart of Dubai
+        </h2>
+
+        <p class="mt-6 text-lg text-gray-200 leading-relaxed">
+          مركز بارك لطب وجراحة الأسنان | رعاية أسنان متميزة في دبي.
+          Experience advanced dentistry, highly qualified specialists,
+          cutting-edge technology, and patient-focused care in a luxurious
+          and comfortable environment.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+
+          <button onclick="openBookingModal()"
+            class="bg-white text-navy font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition">
+            Book an Appointment via WhatsApp
+          </button>
+
+          <a href="tel:+97143466111"
+            class="border border-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-navy transition">
+            Call Now
+          </a>
+
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl p-8 text-white shadow-2xl">
+
+        <div class="text-center">
+          <h3 class="text-3xl font-bold">
+            Trusted by Patients Across Dubai
+          </h3>
+
+          <div class="mt-8 bg-white text-navy rounded-2xl p-8 shadow-lg">
+
+            <div class="text-6xl font-extrabold text-teal">
+              4.9
+            </div>
+
+            <div class="text-yellow-500 text-2xl mt-2">
+              ★★★★★
+            </div>
+
+            <p class="mt-3 font-semibold">
+              4.9 out of 5 Stars
+            </p>
+
+            <p class="text-gray-600">
+              Based on 343 Reviews
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-lightbg">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold text-navy">
+        Excellence in Modern Dentistry
+      </h2>
+
+      <p class="mt-6 text-gray-600 text-lg">
+        Park Dental Center combines clinical excellence with advanced
+        technology to deliver exceptional dental outcomes. Our team
+        focuses on patient comfort, transparency, and long-term oral health.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-navy">
+        Premium Dental Services
+      </h2>
+      <p class="mt-4 text-gray-600">
+        Advanced treatments tailored to your needs.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg border">
+        <h3 class="text-xl font-bold text-navy">Root Canal Treatment</h3>
+        <p class="mt-4 text-gray-600">
+          Expert endodontic procedures using advanced imaging and modern techniques.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg border">
+        <h3 class="text-xl font-bold text-navy">Dental Implants</h3>
+        <p class="mt-4 text-gray-600">
+          High-quality implant solutions designed for durability and aesthetics.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg border">
+        <h3 class="text-xl font-bold text-navy">Crown Fitting</h3>
+        <p class="mt-4 text-gray-600">
+          Precision-crafted crowns for strength, function, and appearance.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg border">
+        <h3 class="text-xl font-bold text-navy">Painless Treatment</h3>
+        <p class="mt-4 text-gray-600">
+          Comfortable procedures focused on minimizing discomfort and anxiety.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg border">
+        <h3 class="text-xl font-bold text-navy">Smile Makeover</h3>
+        <p class="mt-4 text-gray-600">
+          Hollywood Smile solutions designed to enhance confidence and aesthetics.
+        </p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg border">
+        <h3 class="text-xl font-bold text-navy">Clear Explanations</h3>
+        <p class="mt-4 text-gray-600">
+          Transparent communication and treatment planning every step of the way.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="py-24 bg-lightbg">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-navy">
+        Meet Our Specialists
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+
+      <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-navy">
+          Dr. Alaa Mansour
+        </h3>
+        <p class="mt-2 text-teal font-semibold">
+          Expert Endodontist / Root Canal Specialist
+        </p>
+        <p class="mt-4 text-gray-600">
+          Specialized in advanced root canal treatments with a meticulous,
+          technology-driven approach focused on patient comfort.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-navy">
+          Dr. Husam
+        </h3>
+        <p class="mt-2 text-teal font-semibold">
+          Implantology & Dental Implants Specialist
+        </p>
+        <p class="mt-4 text-gray-600">
+          Experienced in dental implant solutions using premium materials
+          and the latest dental technologies.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <h3 class="text-2xl font-bold text-navy">
+          Dr. Ibrahim Dannoura
+        </h3>
+        <p class="mt-2 text-teal font-semibold">
+          General & Cosmetic Dentistry
+        </p>
+        <p class="mt-4 text-gray-600">
+          Dedicated to providing professional, patient-focused care with
+          excellence in cosmetic and restorative dentistry.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-navy">
+        Patient Testimonials
+      </h2>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8 mt-16">
+
+      <div class="bg-white p-8 rounded-2xl shadow-xl border">
+        <div class="text-yellow-500 text-xl">★★★★★</div>
+
+        <p class="mt-5 text-gray-700 leading-relaxed">
+          "Dr Alaa Mansour, the best Root Canal Dentist in Dubai at Park Dental Centre treated me in 2025 and in 2026 and I am extremely delighted and satisfied with his service... Dr Alaa’s methodical approach started with a comprehensive diagnose of my case using the latest scanning technology... The next phase of treatment was so relaxing and pain free."
+        </p>
+
+        <div class="mt-6">
+          <p class="font-bold text-navy">
+            British Advisory (Dr Nicholas J, Economic Advisor)
+          </p>
+          <p class="text-gray-500">5 Stars</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-xl border">
+        <div class="text-yellow-500 text-xl">★★★★★</div>
+
+        <p class="mt-5 text-gray-700 leading-relaxed">
+          "I am being treated by Dr Husam. He is a very competent dentist and he kept me informed all the time of my procedure. I had two in-plants and had no swelling or pain afterwards. Good value for money and all the best material is used. The practice is equipped with the latest technology. So far a very good experience."
+        </p>
+
+        <div class="mt-6">
+          <p class="font-bold text-navy">
+            Rafid Alkhaddar (Local Guide)
+          </p>
+          <p class="text-gray-500">5 Stars</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-xl border">
+        <div class="text-yellow-500 text-xl">★★★★★</div>
+
+        <p class="mt-5 text-gray-700 leading-relaxed">
+          "I would thank Dr Ibrahim Dannoura for his kindness and professionalism."
+        </p>
+
+        <div class="mt-6">
+          <p class="font-bold text-navy">
+            A satisfied patient
+          </p>
+          <p class="text-gray-500">5 Stars</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-navy text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <div>
+        <h2 class="text-4xl font-bold">
+          Visit Our Clinic
+        </h2>
+
+        <div class="mt-8 space-y-5">
+
+          <p>
+            <strong>Address:</strong><br>
+            22A St - Al Safa 1 - Al Safa - Dubai - United Arab Emirates
+          </p>
+
+          <p>
+            <strong>Plus Code:</strong><br>
+            56GV+CV Dubai
+          </p>
+
+          <p>
+            <strong>Phone:</strong><br>
+            +971 4 346 6111
+          </p>
+
+          <a href="https://wa.me/97143466111"
+            target="_blank"
+            class="inline-block bg-teal px-8 py-4 rounded-xl font-bold hover:scale-105 transition">
+            WhatsApp Appointment
+          </a>
+
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-3xl font-bold mb-6">
+          Working Hours
+        </h3>
+
+        <div class="overflow-hidden rounded-2xl border border-white/20">
+          <table class="w-full">
+            <tbody>
+              <tr class="border-b border-white/20">
+                <td class="p-4">Saturday - Thursday</td>
+                <td class="p-4 font-semibold">10:00 – 19:00</td>
+              </tr>
+
+              <tr>
+                <td class="p-4">Friday</td>
+                <td class="p-4 font-semibold text-red-300">Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white py-10">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg" alt="Park Dental Center Logo" class="h-12">
+        <div>
+          <h4 class="font-bold">Park Dental Center</h4>
+          <p class="text-sm text-gray-400">
+            Premium Dental Care in Dubai
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p>
+          © 2026 Park Dental Center. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div id="bookingModal"
+  class="fixed inset-0 bg-black/70 hidden items-center justify-center z-[999]">
+
+  <div class="bg-white rounded-3xl p-8 max-w-md mx-4 text-center">
+
+    <h3 class="text-2xl font-bold text-navy">
+      Book Your Appointment
+    </h3>
+
+    <p class="mt-4 text-gray-600">
+      You will be redirected to WhatsApp to speak directly with Park Dental Center.
+    </p>
+
+    <div class="flex gap-4 mt-8">
+
+      <button onclick="redirectWhatsApp()"
+        class="flex-1 bg-teal text-white py-3 rounded-xl font-bold">
+        Continue
+      </button>
+
+      <button onclick="closeBookingModal()"
+        class="flex-1 bg-gray-200 py-3 rounded-xl font-bold">
+        Cancel
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuBtn.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+});
+
+function openBookingModal(){
+document.getElementById('bookingModal').classList.remove('hidden');
+document.getElementById('bookingModal').classList.add('flex');
+}
+
+function closeBookingModal(){
+document.getElementById('bookingModal').classList.remove('flex');
+document.getElementById('bookingModal').classList.add('hidden');
+}
+
+function redirectWhatsApp(){
+window.open(
+'https://wa.me/97143466111?text=Hello%20Park%20Dental%20Center,%20I%20would%20like%20to%20book%20an%20appointment.',
+'_blank'
+);
+}
+
+</script>
+
+</body>
+  </html>
